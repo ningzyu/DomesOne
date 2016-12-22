@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nzy.dome1.ui.Activity0">
+    <include layout="@layout/toolbar_layout"/>
+    <!--自定义可拖动的小球-->
+    <com.nzy.dome1.view.DarawView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/a0_v01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="320dp"
+            android:height="320dp"
+            android:background="#f00"
+            />
+        <TextView
+            android:id="@+id/a0_v02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="280dp"
+            android:height="280dp"
+            android:background="#d1b0b0"
+            />
+        <TextView
+            android:id="@+id/a0_v03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="240dp"
+            android:height="240dp"
+            android:background="#0bda95"
+            />
+        <TextView
+            android:id="@+id/a0_v04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="200dp"
+            android:height="200dp"
+            android:background="#f00"
+            />
+        <TextView
+            android:id="@+id/a0_v05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="160dp"
+            android:height="160dp"
+            android:background="#001eff"
+            />
+        <TextView
+            android:id="@+id/a0_v06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="120dp"
+            android:height="120dp"
+            android:background="#8400ff"
+            />
+
+
+
+
+    </FrameLayout>
+</LinearLayout>

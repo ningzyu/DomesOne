@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_07"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nzy.dome1.ui.Activity07">
+    <include layout="@layout/toolbar_layout"/>
+<ImageView
+    android:id="@+id/a7_iv"
+    android:src="@drawable/h6"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" />
+    <!--拖动条-->
+    <SeekBar
+        android:id="@+id/seek"
+        android:max="260"
+        android:progress="260"
+        android:thumb="@drawable/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--星际评分条-->
+    <RatingBar
+        android:id="@+id/rating"
+        android:numStars="5"
+        android:max="255"
+        android:progress="255"
+        android:stepSize="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

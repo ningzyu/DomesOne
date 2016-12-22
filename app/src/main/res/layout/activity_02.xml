@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nzy.dome1.ui.Activity02">
+    <include layout="@layout/toolbar_layout"/>
+    <!--定义模拟时钟-->
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--定义数字时钟-->
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="#f0f"
+        android:format12Hour="yyyy年MM月dd日H:mma EEEE"
+        android:drawableEnd="@mipmap/ic_launcher"/>
+
+    <!--定义模拟时钟，并使用表盘、时针图片-->
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dial="@mipmap/ic_launcher"
+        android:hand_minute="@mipmap/ic_launcher"/>
+
+    <Chronometer
+        android:id="@+id/ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="开始"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
