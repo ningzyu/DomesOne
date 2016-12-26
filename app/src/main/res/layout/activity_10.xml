@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.nzy.dome1.ui.Activity10">
+    <include layout="@layout/toolbar_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-</RelativeLayout>
+        <ListView
+            android:id="@+id/a10_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <!--android:divider="@drawable/line3"-->
+        <TextView
+            android:id="@+id/float_letter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#F88701"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <com.nzy.dome1.view.SlideBars
+            android:id="@+id/slideBar"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+</LinearLayout>
